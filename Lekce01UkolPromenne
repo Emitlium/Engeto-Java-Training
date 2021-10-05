@@ -1,0 +1,18 @@
+package com.engeto;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+public class L01U01Promenne {
+    public static void main(String[] args) {
+        String nameOfClient;
+        int numberOfPurchases;
+        String nameOfCity;
+        BigDecimal carConsumption;
+        BigDecimal cableLenght;
+        LocalDate clientDateOfBirht;
+        String carSPZ;
+        String ipAddress;
+
+    }
+}
