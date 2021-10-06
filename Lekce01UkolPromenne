@@ -3,16 +3,32 @@ package com.engeto;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class L01U01Promenne {
+public class Main {
     public static void main(String[] args) {
-        String nameOfClient;
-        int numberOfPurchases;
-        String nameOfCity;
-        BigDecimal carConsumption;
-        BigDecimal cableLenght;
-        LocalDate clientDateOfBirht;
-        String carSPZ;
-        String ipAddress;
+        String nameOfClient = "Jana";
+        String surnameOfClient = "Konecna";
+        System.out.println("1.1 Jmeno: " + nameOfClient);
+        System.out.println("1.2 Prijmeni: " + surnameOfClient);
 
+        int numberOfPurchases = 5;
+        System.out.println("2. Pocet nakupu: " + numberOfPurchases);
+
+        String nameOfCity = "Brno";
+        System.out.println("3. Nazev mesta: " + nameOfCity);
+
+        BigDecimal carConsumption = BigDecimal.valueOf(5.5);
+        System.out.println("4. Spotreba vozidla: " + carConsumption + " l.");
+
+        BigDecimal cableLenght = BigDecimal.valueOf(155.6);
+        System.out.println("5. Delka kabelu na skladě: " + cableLenght + " m.");
+
+        LocalDate clientDateOfBirht = LocalDate.of(2021,5,12);
+        System.out.println("6. Datum narozeni klienta: " + clientDateOfBirht);
+
+        String carSPZ = "4E0 5015";
+        System.out.println("7. SPZ vozidla: " + carSPZ);
+
+        String ipAddress = "8.8.8.8";
+        System.out.println("8. IP adresa v4: " + ipAddress);
     }
 }
