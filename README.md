@@ -8,5 +8,5 @@
 [Lekce 02 - Úkol - Hotel](https://github.com/Emitlium/Lekce02_UkolHotel/tree/master/src/com/engetohotel)  
 
 Úkoly z třetí hodiny:  
-Lekce 03 - Úkol - ifloop  
+[Lekce 03 - Úkol - ifloop](https://github.com/Emitlium/Engeto-Java-Training/tree/main/Lekce03)  
 Lekce 03 - Úkol - fizzbuzz  
