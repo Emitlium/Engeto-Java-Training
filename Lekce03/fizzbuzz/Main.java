@@ -26,10 +26,9 @@ public class Main {
     }
 }
 
+//// ==== NEFUNKČNÍ ====
 //import java.util.ArrayList;
 //import java.util.List;
-//
-//// ==== NEFUNKČNÍ ====
 //
 //public class Main {
 //    // == Methods ==
