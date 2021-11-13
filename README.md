@@ -10,3 +10,10 @@
 Úkoly z třetí hodiny:  
 [Lekce 03 - Úkol - ifloop](https://github.com/Emitlium/Engeto-Java-Training/tree/main/Lekce03)  
 [Lekce 03 - Úkol - fizzbuzz](https://github.com/Emitlium/Engeto-Java-Training/tree/main/Lekce03/fizzbuzz)
+
+Úkoly ze čtvrté hodiny:  
+Tento repozitář  
+
+Úkoly z páte hodiny:  
+Úkoly z šesté hodiny:  
+
