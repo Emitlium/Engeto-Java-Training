@@ -15,6 +15,6 @@
 Tento repozitář  
 
 Úkoly z páte hodiny:  
-[Lekce 05 - Květiny](https://github.com/Emitlium/Engeto-Java-Training/tree/main/Lekce05)
+[Lekce 05 - Květiny](https://github.com/Emitlium/Engeto-Java-Training/tree/main/Lekce05)  
 Úkoly z šesté hodiny:  
 
