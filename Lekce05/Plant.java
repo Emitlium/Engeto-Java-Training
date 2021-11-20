@@ -1,92 +1,93 @@
-package com.engeto.ukol;
+package Moje.java.moje;
 
 import java.time.LocalDate;
 
 public class Plant {
-    // == Attributes ==
+
+    // == ATRIBUTES ==
+
     private String name, notes;
-    private LocalDate planted, lastWatered;
+    private LocalDate planted, watering;
     private int frequencyOfWatering;
 
-    // == Constructors ==
-        // 1. jeden pro nastavení všech atributů
-    public Plant(String name, String notes, LocalDate planted, LocalDate lastWatered, int frequencyOfWatering) {
+
+    // == CONSTRUCTORS ==
+    // = kompletni konstruktor
+    public Plant(String name, String notes, LocalDate planted, LocalDate watering, int frequencyOfWatering) {
         this.name = name;
         this.notes = notes;
         this.planted = planted;
-        this.lastWatered = lastWatered;
+        this.watering = watering;
         this.frequencyOfWatering = frequencyOfWatering;
     }
-        // 2. druhý nastaví jako poznámku prázdný řetězec a datum poslední zálivky nastaví na dnešní datum.
+    // konstruktor jen s name, planted, frequency, poznamky a posledni zaliti je automaticky na nic a dnes
     public Plant(String name, LocalDate planted, int frequencyOfWatering) {
-        this.name = name;
-        this.notes = ""; // -> retezec, neni v konstruktoru
-        this.planted = planted;
-        this.lastWatered = LocalDate.now(); //-> dnesni datum, neni v konstruktoru
-        this.frequencyOfWatering = frequencyOfWatering;
+        this(name, "", planted, LocalDate.now(), frequencyOfWatering);
     }
-        // 3. třetí nastaví totéž co druhý a navíc výchozí frekvenci zálivky na 7 dnů a datum zasazení na dnešní datum.
-        // (Uživatel tedy bude zadávat pouze název rostliny.)
-    public Plant(String name) {
-        this.name = name;
-        this.notes = ""; // stejne jako 2
-        this.planted = LocalDate.now(); // zasazeno dnes
-        this.lastWatered = LocalDate.now(); // stejne jako 2
-        this.frequencyOfWatering = 7;
+    // konstruktor jen s name, zbytek je pevně nastaven
+    public Plant(String name){
+        this(name,LocalDate.now(),7);
     }
 
-    // == Getters & Setters ==
-        //Vytvořte výchozí přístupové metody pro všechny atributy.
+
+    // == METHODS ==
+    // = GET&SET
+
     public String getName() {
         return name;
     }
     public void setName(String name) {
         this.name = name;
     }
-
     public String getNotes() {
         return notes;
     }
     public void setNotes(String notes) {
         this.notes = notes;
     }
-
     public LocalDate getPlanted() {
         return planted;
     }
     public void setPlanted(LocalDate planted) {
         this.planted = planted;
     }
-
-    public LocalDate getLastWatered() {
-        return lastWatered;
+    public LocalDate getWatering() {
+        return watering;
     }
-        //ošetřete zadávání data poslední zálivky
-        // — nesmí být starší než datum zasazení rostliny.
-    public void setLastWatered(LocalDate lastWatered) throws PlantException {
-        if (lastWatered.isBefore(getPlanted())) throw new PlantException ("CHYBA: Kvetina nemuze byt zalita predtim, nez je zasazena.");
-
-        this.lastWatered = lastWatered;
+    public void setWatering(LocalDate watering) throws PlantException {
+        if (watering.isBefore(getPlanted())) throw new PlantException("Datum zaliti je pred datem zasazeni.");
+        this.watering = watering;
     }
-
     public int getFrequencyOfWatering() {
         return frequencyOfWatering;
     }
-        //Ošetřete zadávání frekvence zálivky — pokud je parametrem 0 nebo záporné číslo,
-        // systém vyhodí výjimku třídy PlantException s vhodným popisem.
     public void setFrequencyOfWatering(int frequencyOfWatering) throws PlantException {
-        if (frequencyOfWatering <= 0) throw new PlantException ("CHYBA: Je třeba zalévat! Zadáno je "+getFrequencyOfWatering()+", to by nám to uschlo.");
-
+        if (frequencyOfWatering <=0) throw new PlantException("Frekvence zalevani "+getName()+" je 0 nebo mensi.");
         this.frequencyOfWatering = frequencyOfWatering;
     }
 
-    // == Methods ==
-        // Připravte metodu getWateringInfo(), která vrátí název květiny,
-        // datum poslední zálivky a datum doporučené další zálivky.
-        // (Metoda vrátí textový řetězec, obsahující požadované informace.)
+
+    // Other Methods
+
     public String getWateringInfo(){
-        return "Jmeno kvetiny: \n\t"+getName()+"\nNaposledny zalita: \n\t"+getLastWatered()+"\nDoporuceno zalit:\n\t"+lastWatered.plusDays(getFrequencyOfWatering());
+        String info;
+        info = "Kvetina: "+getName();
+        info += "\n\tDatum zaliti kvetiny:\t"+getWatering()+"\n\tDoporucene dalsi zaliti:\t"+ getWatering().plusDays(getFrequencyOfWatering());
+        return info;
     }
 
+    // místo vypisování sout sout sout
+    public void printInfo(){
+        System.out.println(getWateringInfo());
+    }
 
+    // STRING na export
+    public String forExport(String oddelovac){
+        String export = getName()+oddelovac;
+        export += getNotes()+oddelovac;
+        export += getFrequencyOfWatering()+oddelovac;
+        export += getPlanted()+oddelovac;
+        export += getWatering()+"\n";
+        return export;
+    }
 }
