@@ -1,9 +1,9 @@
-package com.engeto;
+package Lekce01;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class Main {
+public class UkolPromenne {
     public static void main(String[] args) {
         String nameOfClient = "Jana";
         String surnameOfClient = "Konecna";

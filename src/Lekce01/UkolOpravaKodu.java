@@ -1,8 +1,8 @@
-package com.engeto;
+package Lekce01;
 
 import java.math.BigDecimal;
 
-public class Main {
+public class UkolOpravaKodu {
 
     public static void ukol1() {
         System.out.println("Hello world!");

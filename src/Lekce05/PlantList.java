@@ -1,4 +1,4 @@
-package Moje.java.moje;
+package Lekce05;
 
 import java.io.*;
 import java.time.LocalDate;

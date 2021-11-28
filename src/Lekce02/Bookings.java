@@ -1,4 +1,4 @@
-package com.engetohotel;
+package Lekce02;
 
 import java.time.LocalDate;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Moje.java.moje;
+package Lekce05;
 
 public class Main {
     public static final String KVETINY_IMPORT = "kvetiny_01.txt";

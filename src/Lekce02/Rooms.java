@@ -1,4 +1,4 @@
-package com.engetohotel;
+package Lekce02;
 
 public class Rooms {
     // ZADANI: Pokoj = číslo (int), počet lůžek (int), balkon (boo), výhled na moře (boo), cena za noc (int)
