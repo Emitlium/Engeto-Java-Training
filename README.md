@@ -15,3 +15,20 @@ Tento repozitář
 
 Úkoly z páte hodiny:  
 [Lekce 05 - Květiny](https://github.com/Emitlium/Engeto-Java-Training/tree/main/src/Lekce05)  
+
+Úkoly z šesté hodiny:  
+Projekt 1
+
+Úkoly z sedmé hodiny:  
+[Práce s GitHubem](https://github.com/Emitlium/L7-Maven-test)
+
+Úkoly z osmé hodiny:  
+
+Úkoly z deváté hodiny:  
+
+Úkoly z desáté hodiny:
+
+Úkoly z jedenácté hodiny:
+
+Úkoly z dvanácté hodiny: 
+Projekt 2
