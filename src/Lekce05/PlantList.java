@@ -51,8 +51,6 @@ public class PlantList {
                 }
                 catch (DateTimeException e) {throw new PlantException ("Neplatné datum.");}
                 catch (NumberFormatException e) {throw new PlantException ("Chybné číslo.");}
-
-
             }
             scanner.close();
 
