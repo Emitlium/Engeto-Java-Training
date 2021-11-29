@@ -1,6 +1,7 @@
 package Lekce05;
 
 import java.io.*;
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,15 +38,21 @@ public class PlantList {
         try {
             Scanner scanner = new Scanner(new BufferedReader(new FileReader(pathToFile)));
             while (scanner.hasNextLine()) {
-                String[] scanned = scanner.nextLine().split(oddelovac);
-                Plant temp = new Plant(
-                        scanned[0],
-                        scanned[1],
-                        LocalDate.parse(scanned[3]),
-                        LocalDate.parse(scanned[4]),
-                        Integer.parseInt(scanned[2])
-                );
-                plantList.addPlant(temp);
+
+                try {
+                    String[] scanned = scanner.nextLine().split(oddelovac);
+                    Plant temp = new Plant(
+                            scanned[0],
+                            scanned[1],
+                            LocalDate.parse(scanned[3]),
+                            LocalDate.parse(scanned[4]),
+                            Integer.parseInt(scanned[2]));
+                    plantList.addPlant(temp);
+                }
+                catch (DateTimeException e) {throw new PlantException ("Neplatné datum.");}
+                catch (NumberFormatException e) {throw new PlantException ("Chybné číslo.");}
+
+
             }
             scanner.close();
 
