@@ -1,0 +1,20 @@
+####################################
+Třída: 4.C (ročník: 4)
+Třídní učitel: Jan, Novák
+Počet studentů: 3
+
+####################################
+# 1 # ID001 - Petr Svoboda (2011)
+# 2 # ID123 - Milan Říha (2010)
+# 3 # ID345 - Jindřich Nový (2012)
+4.C, Novák Jan
+ID001, Petr Svoboda
+ID123, Milan Říha
+ID345, Jindřich Nový
+
+####################################
+Ročník: 4
+Studenti:
+	Svoboda, Petr - 2011
+	Říha, Milan - 2010
+	Nový, Jindřich - 2012
