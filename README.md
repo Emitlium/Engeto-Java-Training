@@ -20,9 +20,10 @@ Tento repozitář
 Projekt 1
 
 Úkoly z sedmé hodiny:  
-[Práce s GitHubem](https://github.com/Emitlium/L7-Maven-test)
+[Lekce 07 - Práce s GitHubem](https://github.com/Emitlium/L7-Maven-test)  
 
 Úkoly z osmé hodiny:  
+[Lekce 08 - OOP](https://github.com/Emitlium/Engeto-Java-Training/tree/main/src/Lekce08)  
 
 Úkoly z deváté hodiny:  
 
