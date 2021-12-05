@@ -26,6 +26,7 @@ Tento repozitář
 [Lekce 08 - OOP](https://github.com/Emitlium/Engeto-Java-Training/tree/main/src/Lekce08)  
 
 Úkoly z deváté hodiny:  
+[Lekce 09 - Večeřící filosofové](https://github.com/Emitlium/Engeto-Java-Training/tree/main/src/Lekce09)
 
 Úkoly z desáté hodiny:
 
