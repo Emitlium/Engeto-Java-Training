@@ -2,7 +2,7 @@ package Lekce09;
 
 public class Filosof implements Runnable {
     // == ATTRIBUTY ==
-    private final int HLAD = 10;
+    private final int HLAD = 10_000;
     Pribor levy, pravy;
     boolean jeNajezen;
     String name;
