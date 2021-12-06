@@ -10,7 +10,7 @@ AND constructionCompleted-constructionStated>1;
 
 
 -- 2. Vyberte jména všech vil, které stojí v Pisárkách
-SELECT name, address
+SELECT name
 FROM FamousVilla
 WHERE address LIKE '%Pisárky%';
 
