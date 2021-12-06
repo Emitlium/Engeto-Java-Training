@@ -29,6 +29,7 @@ Tento repozitář
 [Lekce 09 - Večeřící filosofové](https://github.com/Emitlium/Engeto-Java-Training/tree/main/src/Lekce09)
 
 Úkoly z desáté hodiny:
+[Lekce 10 - SQL queries](https://github.com/Emitlium/Engeto-Java-Training/tree/main/src/Lekce10)
 
 Úkoly z jedenácté hodiny:
 
