@@ -2,7 +2,8 @@
 
 -- 1.Vyberte jména všech vil a jejich adresy, takových které:
 -- nebyly postaveny ve funkcionalistickém stylu a jejich stavba trvala déle, než rok
-SELECT name, address, architecturalStyle FROM FamousVilla
+SELECT name, address
+FROM FamousVilla
 WHERE NOT architecturalStyle IN ('funkcionalismus', 'functionalismus')
 AND constructionCompleted-constructionStated>1;
 -- poznámka2: dle zadání je déle než rok je jen Haas a Tugendhat, obě jsou funkcionalismus, takže nám to nevrátí nic
